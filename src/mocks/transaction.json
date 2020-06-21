@@ -1,0 +1,15 @@
+{
+  "id": "",
+  "time": "",
+  "amount": "",
+  "userId": "",
+  "gameId": "",
+  "desription": "",
+  "stripe": {
+    "transactionId": "",
+    "cardId": "",
+    "customerId": ""
+  },
+  "timeCreated": "",
+  "timeModified": ""
+}

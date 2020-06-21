@@ -1,0 +1,25 @@
+{
+  "id": "",
+  "name": "",
+  "zip": "",
+  "users": [
+    {
+      "id": "",
+      "role": ""
+    }
+  ],
+  "games": [
+    {
+      "id": "",
+      "season": "",
+      "gameFee": "",
+      "noPicks": "",
+      "allowRosterMoves": "",
+      "noRosterMoves": "",
+      "draftTime": "",
+      "isDraftCompleted": ""
+    }
+  ],
+  "timeCreated": "",
+  "timeModified": ""
+}

@@ -1,0 +1,22 @@
+{
+  "id": "",
+  "role": "",
+  "email": "",
+  "first_name": "",
+  "last_name": "",
+  "mobile_phone": "",
+  "mobile_provider": "",
+  "salt": "",
+  "password": "",
+  "notify": {
+    "mobile": "",
+    "email": ""
+  },
+  "credit": {
+    "stripe_customer_id": "",
+    "stripe_creditcard_id": ""
+  },
+  "created_at": "",
+  "updated_at": "",
+  "last_login": ""
+}
