@@ -15,6 +15,7 @@ function App() {
     <Router>
       <div>
         <Route exact path='/' component={Home} />
+        <Route path="/login" component={Home} />
         <Route path='/howitworks' component={HowItWorks} />
         <Route path='/faq' component={Faq} />
         <Route path='/open-source' component={OpenSource} />
