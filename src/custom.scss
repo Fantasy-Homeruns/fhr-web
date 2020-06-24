@@ -376,6 +376,38 @@ nav {
 		top: 0;
 	}
 }
+.red-button {
+	background-color: #d7182b;
+	color: $color_1;
+	font-size: 17px;
+	border: 0;
+	padding: 13px 30px 13px;
+	border-radius: 0;
+	display: inline-block;
+	text-transform: uppercase;
+  vertical-align: top;
+	&:hover {
+		background-color: #d7182b;
+		color: $color_1;
+		text-decoration: none;
+	}
+}
+.blue-button {
+	background-color: #1c2a47;
+	color: $color_1;
+	font-size: 17px;
+	border: 0;
+	padding: 13px 30px 13px;
+	border-radius: 0;
+	display: inline-block;
+	text-transform: uppercase;
+  vertical-align: top;
+	&:hover {
+		background-color: #1c2a47;
+		color: $color_1;
+		text-decoration: none;
+	}
+}
 .grey-btn {
 	background-color: #e4e4e4;
 	color: $color_4;
@@ -436,10 +468,10 @@ footer {
 	display: inline-block;
 	position: relative;
 	text-align: center;
-	width: 542px;
+	width: 742px;
 	h1 {
 		color: $color_1;
-		font-size: 75px;
+		font-size: 55px;
 		z-index: 999;
 		text-transform: uppercase;
 		p {

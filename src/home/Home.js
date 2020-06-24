@@ -31,6 +31,9 @@ class Home extends Component {
                                <p><span>FANTASY BASEBALL</span> SIMPLIFIED</p>
                                <img src={borderRed} alt="" className="bottom-border" /></h1>
                             </div>
+                            <div className="get-started-outer" style={{ fontFamily: 'Raleway-Black'}}>
+                              <a href="https://admin.fantasyhomeruns.com/signup" className="get-started">GET STARTED!</a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -39,13 +42,25 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            <div className="container">
+            <div className="container" style={{ marginTop: '-60px', marginBottom: '-100px' }}>
               <div className="row how-it-work-outer">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 how-it-work pad-none">
-                  <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>
-                    Who's READY for some baseball??!   Everyone at FHR sure is!<br/>
-                    FHR will be BACK ONLINE and ready for your draft and the season once MLB defines it.  <br/>
-                    Feel free to <a href="mailto:support@fantasyhomeruns.com" target="_blank" rel="noopener noreferrer">email us</a> with any questions.
+                  <p style={{ fontFamily: 'Arial', fontSize: '13pt', color: '#d1d1d1', margin: '20px' }}>
+                    Starting in the 2020 Season and for every season after, Fantasy Homeruns will operate as a not-for-profit organization, donating all profits to the Jackie Robinson Foundation.  Jackie Robinson broke barriers in sports, media and business and was a baseball legend.  He was a leader who believed that opportunity is a right for everyone. We strongly endorse that philosophy.  We believe in the Jackie Robinson Foundation and their mission to facilitate change through education and invest in our future generations.
+                  </p>
+                  <p>
+                    <div className="get-started-outer" style={{ fontFamily: 'Raleway-Black', marginTop: '10px', marginBottom: '20px' }}>
+                      <a href="/jackie-robinson" className="get-started">LEARN MORE ABOUT THE JRF</a>
+                    </div>
+                  </p>
+                  <p style={{ fontFamily: 'Arial', fontSize: '13pt', color: '#d1d1d1', margin: '20px' }}>
+                    Fantasy Homeruns is now an open source project.<br/>
+                    Work is currently in progress on the next version of our fantasy baseball game software and you can help!
+                  </p>
+                  <p>
+                    <div className="get-started-outer" style={{ fontFamily: 'Raleway-Black', marginTop: '10px' }}>
+                      <a href="/open-source" className="get-started">JOIN OUR COMMUNITY</a>
+                    </div>
                   </p>
                 </div>
               </div>
@@ -72,11 +87,11 @@ class Home extends Component {
                   <li>
                   <div className="work-inner">
                     <Link to="/"><img src={howItWork3} alt="Log in" /></Link>
-                    <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>2020 Season Coming Soon</p>
+                    <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>already have an account?</p>
                   </div>
                   <div className="learn-more-outer-right" style={{ fontFamily: 'Raleway-Black'}}>
-                    <a className="red-learn-more" href="mailto:support@fantasyhomeruns.com" target="_blank" rel="noopener noreferrer">
-                      EMAIL SUPPORT
+                    <a className="red-learn-more" href="https://admin.fantasyhomeruns.com/log-in">
+                      LOGIN NOW
                     </a>
                   </div>
                   </li>

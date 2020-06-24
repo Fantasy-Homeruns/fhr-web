@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './home/Home';
 import HowItWorks from './home/HowItWorks';
 import Faq from './home/Faq';
+import OpenSource from './home/OpenSource';
+import Jackie from './home/Jackie';
 import Signup from './signup/Signup';
 import Login from './login/Login';
 import Dashboard from './dashboard/Dashboard';
@@ -13,11 +15,31 @@ function App() {
     <Router>
       <div>
         <Route exact path='/' component={Home} />
-        <Route path='/signup' component={Signup} />
         <Route path='/howitworks' component={HowItWorks} />
         <Route path='/faq' component={Faq} />
-        <Route path='/log-in' component={Login} />
-        <Route path='/dashboard' component={Dashboard} />
+        <Route path='/open-source' component={OpenSource} />
+        <Route path='/jackie-robinson' component={Jackie} />
+        <Route path='/new-signup' component={Signup} />
+        <Route path='/new-log-in' component={Login} />
+        <Route path='/new-dashboard' component={Dashboard} />
+        <Route
+          path="/log-in"
+          component={() => {
+            global.window && (global.window.location.href = 'https://admin.fantasyhomeruns.com/log-in');
+            return null;
+          }} />
+        <Route
+          path="/signup"
+          component={() => {
+            global.window && (global.window.location.href = 'https://admin.fantasyhomeruns.com/signup');
+            return null;
+          }} />
+        <Route
+          path="/dashboard"
+          component={() => {
+            global.window && (global.window.location.href = 'https://admin.fantasyhomeruns.com/dashboard');
+            return null;
+          }} />
       </div>
     </Router>
   );
