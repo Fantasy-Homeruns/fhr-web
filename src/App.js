@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './home/Home';
 import HowItWorks from './home/HowItWorks';
 import Faq from './home/Faq';
+import Equality from './home/Equality';
 import OpenSource from './home/OpenSource';
 import Jackie from './home/Jackie';
 import Signup from './signup/Signup';
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" component={Home} />
         <Route path='/howitworks' component={HowItWorks} />
         <Route path='/faq' component={Faq} />
+        <Route path='/equality' component={Equality} />
         <Route path='/open-source' component={OpenSource} />
         <Route path='/jackie-robinson' component={Jackie} />
         <Route path='/new-signup' component={Signup} />
