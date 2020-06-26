@@ -24,13 +24,6 @@ class Jackie extends Component {
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 dashboard-inner pad-none">
                   <div className="template-detail-box" style={{ color: '#fff' }}>
                     <div style={{ margin: '20' }}>
-                      <p>
-                        Starting in the 2020 Season and for every season after, Fantasy Homeruns will operate as a not-for-profit organization, donating all profits to the Jackie Robinson Foundation.
-                      </p>
-                      <br/>
-                      <p>
-                        Here's a short video about the Jackie Robinson Foundation.
-                      </p>
                       <div className="videoWrapper">
                         <iframe width="420" height="315" title="JRF" src="https://www.youtube.com/embed/rIGdxAqHrIM" frameBorder="0" allowFullScreen></iframe>
                       </div>

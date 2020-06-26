@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import HomeHeader from './Header';
-import './Jackie.scss';
 import Footer from './Footer'
 
 class Equality extends Component {
@@ -56,7 +55,9 @@ class Equality extends Component {
                       <br/>
                       <a href='https://www.jackierobinson.org/event/donatenow/' target='_blank' className='btn btn-large btn-primary' rel="noopener noreferrer"><b>DONATE to Jackie Robinson Foundation</b></a>
                       &nbsp; &nbsp;
-                      <Link to="/open-source" className="btn btn-large btn-secondary">JOIN our Community</Link>
+                      <Link to="/jackie-robinson" className="btn btn-large btn-secondary">Watch a Video about JRF</Link>
+                      &nbsp; &nbsp;
+                      <Link to="/open-source" className="btn btn-large btn-warning">JOIN our Community</Link>
                     </div>
                    </div>
                 </div>
