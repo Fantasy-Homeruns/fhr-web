@@ -46,7 +46,7 @@ class Home extends Component {
               <div className="row how-it-work-outer">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 how-it-work pad-none">
                   <p style={{ fontFamily: 'Arial', fontSize: '13pt', color: '#d1d1d1', margin: '20px' }}>
-                    Fantasy Homeruns is now a not-for-profit organization donating 100% of its profits to the Jackie Robiinson Foundation.  FHR's call to action is to invest in future generations through education.  We're open sourcing our software and asking the community to contribute and help.
+                    Fantasy Homeruns is now a not-for-profit organization donating 100% of its profits to the Jackie Robiinson Foundation.  FHR's call to action is to invest in future generations through education and promote a culture of equality for all.  We're open sourcing our software and asking the community to contribute and help.
                   </p>
                   <p>
                     <div className="get-started-outer" style={{ fontFamily: 'Raleway-Black', marginTop: '10px', marginBottom: '20px' }}>
@@ -54,7 +54,7 @@ class Home extends Component {
                     </div>
                   </p>
                   <p style={{ fontFamily: 'Arial', fontSize: '13pt', color: '#d1d1d1', margin: '20px' }}>
-                    Baseball is Back!   The shortened season brings its own challenges on drafting homerun players.  Get in touch with friends and family and sign up your league today!   We're fully operational.. let's play!
+                    Baseball is Back!   The shortened season brings its own challenges on drafting homerun players, we're up for the challenge, are you?  Get in touch with friends and family and sign up your league today!   We're fully operational.. let's play!
                   </p>
                 </div>
               </div>
