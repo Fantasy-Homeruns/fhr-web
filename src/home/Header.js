@@ -23,12 +23,12 @@ class HomeHeader extends Component {
       <header>
         <div className="container">
           <div className="row">
-            <div className="col-lg-9 col-md-9 col-sm-6 col-xs-6 pull-left">
+            <div className="col-lg-8 col-md-8 col-sm-6 col-xs-6 pull-left">
               <div className="logo">
                 <Link to="/"><img src={logo} alt="logo.png" /></Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 pull-right">
+            <div className="col-lg-4 col-md-4 col-sm-6 col-xs-6 pull-right">
               <a className="red-button" href="https://admin.fantasyhomeruns.com/log-in">
                 LOGIN
               </a>

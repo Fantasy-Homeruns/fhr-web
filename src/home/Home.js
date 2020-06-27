@@ -80,7 +80,7 @@ class Home extends Component {
                   </li>
                   <li>
                   <div className="work-inner">
-                    <Link to="/"><img src={howItWork3} alt="Log in" /></Link>
+                    <a href="https://admin.fantasyhomeruns.com/log-in"><img src={howItWork3} alt="Log in" /></a>
                     <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>already have an account?</p>
                   </div>
                   <div className="learn-more-outer-right" style={{ fontFamily: 'Raleway-Black'}}>
