@@ -28,7 +28,7 @@ class HomeHeader extends Component {
                 <Link to="/"><img src={logo} alt="logo.png" /></Link>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-6 col-xs-6 pull-right">
+            <div className="col-lg-4 col-md-4 col-sm-6 col-xs-6 pull-right header-nav">
               <a className="red-button" href="https://admin.fantasyhomeruns.com/log-in">
                 LOGIN
               </a>

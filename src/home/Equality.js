@@ -28,19 +28,19 @@ class Equality extends Component {
                         Dear Fantasy Homeruns Community,
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
-                        We at Fantasy Homeruns are listening to the events happening all around our country and stand with our fellow Americans to demand justice, opportunity and equality for all people.
+                        We at Fantasy Homeruns stand with our fellow Americans to demand justice, opportunity and equality for all people.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
-                        Not many of you may know this, but my father, one of the co-founders of Fantasy Homeruns migrated to America when he was six years old.  His family settled in Newark, NJ and my father saw first hand the poverty and lack of education opportunities minorities faced in the 1950s that still continue today.
+                        Not many of you may know this, but my father, one of the co-founders of Fantasy Homeruns migrated to America when he was six years old.  His family settled in Newark, NJ and my father saw first hand the poverty and lack of education opportunities that BIPoC (Black, Indigenous and People of Color) youth faced in the 1950s that continue today.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
                         We believe in the American dream, and being white, have been fortunate to grow our families and businesses and make a new home for our families in America.  But injustice still occurs in the world everyday and continues here.  It's time for us to take action.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
-                        Beginning today and every season forward, Fantasy Homeruns will operate as a not-for-profit organization donating 100% of all profits to the Jackie Robinson Foundation.  Jackie Robinson broke barriers in sports, media and business and was a baseball legend.  He was a leader who believed that opportunity is a right for everyone. We strongly endorse that philosophy.  We believe in the Jackie Robinson Foundation and their mission to facilitate change through funding education for our youth, investing in future generations and giving minority children the same opportunities given to me.
+                        Beginning today and every season forward, Fantasy Homeruns will operate as a not-for-profit organization donating 100% of all profits to the Jackie Robinson Foundation.  Jackie Robinson broke barriers in sports, media and business and was a baseball legend.  He was a leader who believed that opportunity is a right for everyone. We strongly endorse that philosophy.  We believe in the Jackie Robinson Foundation and their mission to facilitate change through education and giving people the same opportunities given to us.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
-                        Currently, our community is not very large and our impact will be small.  This is why we also have decided to open source our software and ask for community help to build the next generation software for FHR.  This baseball website has been a side project of mine, along with my father for twelve years.  Unfortunately, I have not had the time or resources to invest in growing our community or software.  By open sourcing our projects, we hope to enable everyone and anyone in the community to directly contribute.
+                        We are seeking to grow our community to have greater impact.  We invite you to join our open source community to build the next generation software for FHR.  By open sourcing our projects, we hope to enable everyone and anyone in the community to directly contribute in support of this mission.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
                         We thank you for being customers of Fantasy Homeruns and love building this fun homerun game every year.  We're excited that baseball is coming back in 2020 and hope you can join us.
