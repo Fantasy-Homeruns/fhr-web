@@ -46,7 +46,7 @@ class Home extends Component {
               <div className="row how-it-work-outer">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 how-it-work pad-none">
                   <p style={{ fontFamily: 'Arial', fontSize: '13pt', color: '#d1d1d1', margin: '20px' }}>
-                    Fantasy Homeruns is now a not-for-profit organization donating 100% of its profits to the Jackie Robiinson Foundation.
+                    Fantasy Homeruns is a not-for-profit organization donating 100% of its profits to the Jackie Robiinson Foundation.
                     We believe in the Jackie Robinson Foundation and their mission to facilitate change through youth education.  We're open sourcing our software and asking the community to contribute and help.
 
                   </p>
@@ -56,7 +56,7 @@ class Home extends Component {
                     </div>
                   </p>
                   <p style={{ fontFamily: 'Arial', fontSize: '13pt', color: '#d1d1d1', margin: '20px' }}>
-                    Baseball is Back!   The shortened season brings its own challenges on drafting homerun players, we're up for the challenge, are you?  Get in touch with friends and family and sign up your league today!   We're fully operational.. let's play!
+                    The 2020 Season is complete.   All of you who played the game this year, we thank you!  Our website is now in hibernation.  If you need access to last year's stats, please email us!  Button is below.  Have a great winter, see y'all in the spring 2021.
                   </p>
                 </div>
               </div>
@@ -82,12 +82,12 @@ class Home extends Component {
                   </li>
                   <li>
                   <div className="work-inner">
-                    <a href="https://admin.fantasyhomeruns.com/log-in"><img src={howItWork3} alt="Log in" /></a>
-                    <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>already have an account?</p>
+                    <a href="mailto:support@fantasyhomeruns.com"><img src={howItWork3} alt="Log in" /></a>
+                    <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>need 2020 data?</p>
                   </div>
                   <div className="learn-more-outer-right" style={{ fontFamily: 'Raleway-Black'}}>
-                    <a className="red-learn-more" href="https://admin.fantasyhomeruns.com/log-in">
-                      LOGIN NOW
+                    <a className="red-learn-more" href="mailto:support@fantasyhomeruns.com">
+                      EMAIL NOW
                     </a>
                   </div>
                   </li>
