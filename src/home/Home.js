@@ -32,7 +32,8 @@ class Home extends Component {
                                <img src={borderRed} alt="" className="bottom-border" /></h1>
                             </div>
                             <div className="get-started-outer" style={{ fontFamily: 'Raleway-Black'}}>
-                              <a href="https://admin.fantasyhomeruns.com/signup" className="get-started">GET STARTED!</a>
+
+
                             </div>
                           </div>
                         </div>
@@ -106,3 +107,5 @@ class Home extends Component {
 }
 
 export default Home;
+
+// <a href="https://admin.fantasyhomeruns.com/signup" className="get-started">GET STARTED!</a>

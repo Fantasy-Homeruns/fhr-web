@@ -29,12 +29,6 @@ class HomeHeader extends Component {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-6 col-xs-6 pull-right header-nav">
-              <a className="red-button" href="https://admin.fantasyhomeruns.com/log-in">
-                LOGIN
-              </a>
-              <a className="blue-button" href="https://admin.fantasyhomeruns.com/signup">
-                SIGNUP
-              </a>
             </div>
           </div>
         </div>
@@ -44,3 +38,10 @@ class HomeHeader extends Component {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader);
+
+// <a className="red-button" href="https://admin.fantasyhomeruns.com/log-in">
+//   LOGIN
+// </a>
+// <a className="blue-button" href="https://admin.fantasyhomeruns.com/signup">
+//   SIGNUP
+// </a>
