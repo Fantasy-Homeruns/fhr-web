@@ -25,6 +25,9 @@ class Equality extends Component {
                   <div className="template-detail-box" style={{ color: '#fff' }}>
                     <div className="equality">
                       <p>
+                        June 27, 2020
+                      </p>
+                      <p>
                         Dear Fantasy Homeruns Community,
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
