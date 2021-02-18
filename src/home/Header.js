@@ -35,6 +35,9 @@ class HomeHeader extends Component {
               <a className="blue-button" href="https://admin.fantasyhomeruns.com/signup">
                 SIGNUP
               </a>
+              <a className="red-button" href="mailto:support@fantasyhomeruns.com" target="_blank" rel="noopener noreferrer">
+                HELP
+              </a>
             </div>
           </div>
         </div>

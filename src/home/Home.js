@@ -60,7 +60,7 @@ class Home extends Component {
                   </li>
                   <li>
                   <div className="work-inner">
-                    <a href="mailto:support@fantasyhomeruns.com"><img src={howItWork3} alt="Log in" /></a>
+                    <a href="https://admin.fantasyhomeruns.com/log-in"><img src={howItWork3} alt="Log in" /></a>
                     <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>Existing Leagues</p>
                   </div>
                   <div className="learn-more-outer-right" style={{ fontFamily: 'Raleway-Black'}}>
