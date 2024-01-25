@@ -76,8 +76,8 @@ class Home extends Component {
               <div className="row how-it-work-outer">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 how-it-work pad-none">
                   <p style={{ fontFamily: 'Arial', fontSize: '13pt', color: '#d1d1d1', margin: '20px' }}>
-                    Fantasy Homeruns is a not-for-profit organization donating 100% of its profits to the Jackie Robiinson Foundation.
-                    We believe in the Jackie Robinson Foundation and their mission to facilitate change through youth education. Our software is open source, <Link to="/open-source">join our community</Link>!
+                    Fantasy Homeruns is a not-for-profit organization donating 100% of its profits to a new organization each year.
+                    Our software is open source, <Link to="/open-source">join our community</Link>!
                   </p>
                   <p>
                     <div className="get-started-outer" style={{ fontFamily: 'Raleway-Black', marginTop: '10px', marginBottom: '20px' }}>
