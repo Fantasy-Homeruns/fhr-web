@@ -34,22 +34,13 @@ class Equality extends Component {
                         We at Fantasy Homeruns stand with our fellow Americans to demand justice, opportunity and equality for all people.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
-                        Not many of you may know this, but my father, one of the co-founders of Fantasy Homeruns migrated to America when he was six years old.  His family settled in Newark, NJ and my father saw first hand the poverty and lack of education opportunities that BIPoC (Black, Indigenous and People of Color) youth faced in the 1950s that continue today.
-                      </p>
-                      <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
-                        We believe in the American dream, and being white, have been fortunate to grow our families and businesses and make a new home for our families in America.  But injustice still occurs in the world everyday and continues here.  It's time for us to take action.
-                      </p>
-                      <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
-                        Beginning today and every season forward, Fantasy Homeruns will operate as a not-for-profit organization donating 100% of all profits to the Jackie Robinson Foundation.  Jackie Robinson broke barriers in sports, media and business and was a baseball legend.  He was a leader who believed that opportunity is a right for everyone. We strongly endorse that philosophy.  We believe in the Jackie Robinson Foundation and their mission to facilitate change through education and giving people the same opportunities given to us.
+                        Beginning today and every season forward, Fantasy Homeruns will operate as a not-for-profit organization donating 100% of all profits.  From 2020-23, we donated to the Jackie Robinson Foundation.  Jackie Robinson broke barriers in sports, media and business and was a baseball legend.  He was a leader who believed that opportunity is a right for everyone. We strongly endorse that philosophy.  We believe in the Jackie Robinson Foundation and their mission to facilitate change through education and giving people the same opportunities given to us.  Starting in 2024, we plan to donate profits to other organizations and will continue the not-for-profit mission.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
                         We are seeking to grow our community to have greater impact.  We invite you to join our open source community to build the next generation software for FHR.  By open sourcing our projects, we hope to enable everyone and anyone in the community to directly contribute in support of this mission.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
                         We thank you for being customers of Fantasy Homeruns and love building this fun homerun game every year.  We're excited that baseball is coming back in 2020 and hope you can join us.
-                      </p>
-                      <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
-                        We are committed in supporting Black Lives Matter, criminal justice reform and investing in our youth's education.
                       </p>
                       <p style={{ fontFamily: 'Arial', fontSize: '13pt', margin: '20px' }}>
                         With the best regards,<br/>
