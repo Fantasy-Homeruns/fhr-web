@@ -1,23 +1,61 @@
-import React, { Component } from 'react';
-import { Redirect } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Redirect } from 'react-router-dom';
 import HomeHeader from '../home/Header';
 import './Signup.scss';
 import { Row, Col } from 'reactstrap';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import Footer from '../home/Footer'
+import Footer from '../home/Footer';
 
-class Signup extends Component {
+function Signup({ location }) {
 
-  constructor () {
-    super();
-    this.state = {
-      fireRedirect: false
+  const [fireRedirect, setFireRedirect] = useState(false);
+
+  // State for each input field
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [allowSubmission, setAllowSubmission] = useState(false);
+
+  // Handlers to set state based on input changes
+  const handleFirstNameChange = (event) => {
+    setFirstName(event.target.value);
+  };
+
+  const handleLastNameChange = (event) => {
+    setLastName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  // Form submission handler
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Here you can handle the submission, for example, log the state
+    console.log({ firstName, lastName, email, password });
+  };
+
+  useEffect(() => {
+
+
+    if (email.length > 0 && password.length > 0) {
+      setAllowSubmission(true);
     }
-  }
+    else {
+      setAllowSubmission(false);
+    }
+    // check if all of the values passed in exist
+  }, [email, password])
 
-  validate(values) {
+  const validate = values => {
     let errors = {};
-    let errorEmail = this.validateEmail(values.email);
+    let errorEmail = validateEmail(values.email);
     if (errorEmail) errors.email = errorEmail;
     if (!values.leagueName) errors.leagueName = "Required";
     if (!values.firstName) errors.firstName = "Required";
@@ -31,21 +69,19 @@ class Signup extends Component {
     if (!values.expmon) errors.expmon = "Required";
     if (!values.expyear) errors.expyear = "Required";
     return errors;
-  }
+  };
 
-  validateEmail(input) {
+  const validateEmail = input => {
     if (!input) {
       return 'Required';
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(input)
-    ) {
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(input)) {
       return 'Enter a valid email address';
     }
     return false;
-  }
+  };
 
-  submit(values) {
-    fetch(process.env.FHR_API + '/v1/league', {
+  const submit = values => {
+    fetch(`${process.env.FHR_API}/v1/league`, {
       method: 'post',
       mode: "no-cors",
       headers: {
@@ -56,151 +92,81 @@ class Signup extends Component {
       body: JSON.stringify(values)
     }).then((response) => {
       console.log(response);
-      this.setState({ fireRedirect: true });
+      setFireRedirect(true);
     });
-  }
+  };
 
-  render() {
-    const { from } = this.props.location.state || '/'
-    const { fireRedirect } = this.state
+  const { from } = location.state || '/';
 
-    return (
-      <div>
-        <section className="container-fluid template-main pad-none responsive-screen">
+  return (
+    <div>
+      <section className="container-fluid template-main pad-none responsive-screen">
         <HomeHeader />
         <div id="content">
           <div className="container">
-           <div className="row margin-none">
-             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center responsive-screen-block">
-               <div className="container">
-                 <div className="row faq-banner">
-                   <div>
-                     <h1>SIGN UP</h1>
-                   </div>
-                 </div>
-               </div>
-             </div>
+            <div className="row margin-none">
+              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center responsive-screen-block">
+                <div className="container">
+                  <div className="row faq-banner">
+                    <div>
+                      <h1>SIGN UP</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 dashboard-inner pad-none">
                 <div className="template-detail-box" style={{ color: '#fff' }}>
-                  <div style={{ margin: '10'}}>
-                    <Formik
-                      initialValues={{
-                        leagueName: '',
-                        email: '',
-                        password: '',
-                        vpassword: '',
-                        firstName: '',
-                        lastName: '',
-                        address: '',
-                        zip: '',
-                        cc: '',
-                        csc: '',
-                        expmon: '',
-                        expyear: ''
-                      }}
-                      validate={values => this.validate(values)}
-                      onSubmit={(values, { setSubmitting }) => this.submit(values)}
-                    >
-                      {({isSubmitting}) => (
-                        <Form>
-                          <Row>
-                            <Col xs={12} sm={12} md={6} style={{ marginTop: 15 }}>
-                              <label>Homerun League Name</label><br/>
-                              <Field type="text" name="leagueName" placeholder="Your league name w/o the year" className="signup-input" />
-                              <ErrorMessage name="leagueName" component="div" className="error-text" />
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col xs={12} sm={12} md={6} style={{ marginTop: 15 }}>
-                              <label>Email</label><br/>
-                              <Field type="email" name="email" placeholder="Your email address" className="signup-input" />
-                              <ErrorMessage name="email" component="div" className="error-text" />
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col xs={12} sm={6} md={4} style={{ marginTop: 20 }}>
-                              <label>Password</label>
-                              <Field type="password" name="password" className="signup-input" />
-                              <ErrorMessage name="password" component="div" className="error-text" />
-                            </Col>
-                            <Col xs={12} sm={6} md={4} style={{ marginTop: 20 }}>
-                              <label>Verify Password</label>
-                              <Field type="password" name="vpassword" className="signup-input" />
-                              <ErrorMessage name="vpassword" component="div" className="error-text" />
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col xs={12} sm={6} md={4} style={{ marginTop: 15 }}>
-                              <label>First Name</label><br/>
-                              <Field type="text" name="firstName" className="signup-input" />
-                              <ErrorMessage name="firstName" component="div" className="error-text" />
-                            </Col>
-                            <Col xs={12} sm={6} md={4} style={{ marginTop: 15 }}>
-                              <label>Last Name</label><br/>
-                              <Field type="text" name="lastName" className="signup-input" />
-                              <ErrorMessage name="lastName" component="div" className="error-text" />
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col xs={12} sm={8} md={4} style={{ marginTop: 15 }}>
-                              <label>Street Address</label><br/>
-                              <Field type="text" name="address" className="signup-input" />
-                              <ErrorMessage name="address" component="div" className="error-text" />
-                            </Col>
-                            <Col xs={12} sm={4} md={4} style={{ marginTop: 15 }}>
-                              <label>Zip Code</label><br/>
-                              <Field type="text" name="zip" className="signup-input" />
-                              <ErrorMessage name="zip" component="div" className="error-text" />
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col xs={12} sm={8} md={4} style={{ marginTop: 15 }}>
-                              <label>Credit Card</label><br/>
-                              <Field type="text" name="cc" placeholder="Numbers only" className="signup-input" />
-                              <ErrorMessage name="cc" component="div" className="error-text" />
-                            </Col>
-                            <Col xs={12} sm={4} md={4} style={{ marginTop: 15 }}>
-                              <label>Card Security Code</label><br/>
-                              <Field type="text" name="csc" placeholder="### or ####" className="signup-input" />
-                              <ErrorMessage name="csc" component="div" className="error-text" />
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col xs={12} sm={4} md={4} style={{ marginTop: 15 }}>
-                              <label>Expiration Month</label><br/>
-                              <Field type="text" name="expmon" placeholder="01" className="signup-input" />
-                              <ErrorMessage name="expmon" component="div" className="error-text" />
-                            </Col>
-                            <Col xs={12} sm={4} md={4} style={{ marginTop: 15 }}>
-                              <label>Expiration Year</label><br/>
-                              <Field type="text" name="expyear" placeholder="2020" className="signup-input" />
-                              <ErrorMessage name="expyear" component="div" className="error-text" />
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col xs={12} sm={2} md={2} style={{ marginTop: 15 }}>
-                              <button type="submit" disabled={isSubmitting}>
-                                Submit
-                              </button>
-                            </Col>
-                          </Row>
-                        </Form>
-                      )}
-                    </Formik>
-                  </div>
+                  <form onSubmit={handleSubmit}>
+                    <label htmlFor="firstName">First Name:</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={firstName}
+                      onChange={handleFirstNameChange}
+                    />
+
+                    <label htmlFor="lastName">Last Name:</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      value={lastName}
+                      onChange={handleLastNameChange}
+                    />
+
+                    <label htmlFor="email">Email:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={email}
+                      onChange={handleEmailChange}
+                    />
+
+                    <label htmlFor="password">Password:</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      value={password}
+                      onChange={handlePasswordChange}
+                    />
+
+                    <button type="submit" disabled={!allowSubmission}>Submit</button>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </section>
-        <Footer />
-        {fireRedirect && (
-          <Redirect to={from || '/log-in'}/>
-        )}
-      </div>
-    );
-  }
+      </section>
+      <Footer />
+      {fireRedirect && (
+        <Redirect to={from || '/log-in'} />
+      )}
+    </div>
+  );
 }
 
 export default Signup;

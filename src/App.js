@@ -22,21 +22,21 @@ function App() {
         <Route path='/equality' component={Equality} />
         <Route path='/open-source' component={OpenSource} />
         <Route path='/jackie-robinson' component={Jackie} />
-        <Route path='/new-signup' component={Signup} />
-        <Route path='/new-log-in' component={Login} />
+        <Route path='/signup' component={Signup} />
+        <Route path='/log-in' component={Login} />
         <Route path='/new-dashboard' component={Dashboard} />
-        <Route
+        {/* <Route
           path="/log-in"
           component={() => {
             global.window && (global.window.location.href = 'https://admin.fantasyhomeruns.com/log-in');
             return null;
-          }} />
-        <Route
+          }} /> */}
+        {/* <Route
           path="/signup"
           component={() => {
             global.window && (global.window.location.href = 'https://admin.fantasyhomeruns.com/signup');
             return null;
-          }} />
+          }} /> */}
         <Route
           path="/dashboard"
           component={() => {
