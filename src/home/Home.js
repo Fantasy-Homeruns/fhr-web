@@ -49,7 +49,7 @@ class Home extends Component {
                       <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>how does <br/>it work?</p>
                     </div>
                     <div className="learn-more-outer-right" style={{ fontFamily: 'Raleway-Black'}}>
-                      <a className="red-learn-more" href="https://admin.fantasyhomeruns.com/signup">sign up</a>
+                      <a className="red-learn-more" href={`${process.env.REACT_APP_CLIENT_URL}/signup`}>sign up</a>
                     </div>
                   </li>
                   <li>
@@ -60,11 +60,11 @@ class Home extends Component {
                   </li>
                   <li>
                   <div className="work-inner">
-                    <a href="https://admin.fantasyhomeruns.com/log-in"><img src={howItWork3} alt="Log in" /></a>
+                    <a href={process.env.REACT_APP_CLIENT_URL + "/log-in"}><img src={howItWork3} alt="Log in" /></a>
                     <p style={{ fontFamily: 'Raleway-Black', color: '#d1d1d1' }}>Existing Leagues</p>
                   </div>
                   <div className="learn-more-outer-right" style={{ fontFamily: 'Raleway-Black'}}>
-                    <a className="red-learn-more" href="https://admin.fantasyhomeruns.com/log-in">log in</a>
+                    <a className="red-learn-more" href={`${process.env.REACT_APP_CLIENT_URL}/log-in`}>log in</a>
                   </div>
                   </li>
                 </ul>
